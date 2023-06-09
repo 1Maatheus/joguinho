@@ -8,17 +8,12 @@ body {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(232, 204, 156, 1) 100%
+    rgba(0, 177, 177, 1) 100%
   );
   overflow: hidden;
 }
 
 .titulo {
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(214, 196, 231, 1) 100%
-  );
   text-align: center;
   padding: 8px;
   font-family: "Roboto Mono", monospace;
@@ -43,6 +38,22 @@ body {
   background-color: rgb(216, 201, 118);
 }
 
+.back {
+  width: 350px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: solid transparent;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  transition: 0.6s;
+}
+
+.back:hover {
+  background-color: #fff;
+  color: #111;
+}
+
 #elemento {
   position: absolute;
   top: 100px;
@@ -62,10 +73,12 @@ body {
   text-align: center;
   color: white;
   display: none;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(241, 149, 149);
+  background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
   right: 0;
